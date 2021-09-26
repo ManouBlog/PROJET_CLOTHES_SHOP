@@ -1,0 +1,266 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0;
+    padding:0;
+}
+/*style pour header+liens*/
+header a{
+    font-size: 1.3em;
+    transition: 0.9s all ease;
+    color: black;
+}
+header a:nth-child(2){
+    color: blue;
+}
+
+div.list_menu a:hover:not(:nth-child(2)){
+    color: crimson;
+    text-shadow: 1px 1px 1px black;
+}
+.content .barre_menu span{
+    width: 35px;
+    height: 5px;
+    background: rgb(45, 45, 46);
+    display: block;
+    border-radius: 5px;
+}
+.barre_menu{
+    display: none;
+}
+.content{
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.493);
+}
+.content h1 a:hover{
+    color: black;
+}
+/*style pour header+liens*/
+
+       /*==== style pour main ====*/
+
+
+
+/*style pour main_cote_left*/
+
+
+/*style pour bouton_recherche*/
+
+.rechercher{
+    background-color: teal;
+    height: 50px;
+    border-radius:0;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.671);
+}
+input{
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 1em;
+
+}
+
+::placeholder{
+    font-size: 1.4em;
+    font-weight: lighter;
+}
+/*style pour bouton_recherche*/
+
+/*style pour menu_monbre_clothes*/
+.menu_nombre_clothes .fw-light{
+    position: relative;
+}
+.menu_nombre_clothes .fw-light::after{
+    content:"(37)";
+    display: inline-block;
+    position: absolute;
+    right: 1em; 
+}
+.menu_nombre_clothes p{
+    position: relative;
+}
+.menu_nombre_clothes p::before{
+    position: absolute;
+    content:">";
+    display: inline-block;
+    left: -1em;
+    font-size: 1em;
+}
+.menu_nombre_clothes .jeans_noir::after,.menu_nombre_clothes .hawai::after{
+    content: "(27)";
+    display: inline-block;
+    position: absolute;
+    right: 1.5em;
+}
+.menu_nombre_clothes .jeans_blue::after,.menu_nombre_clothes .nike::after{
+    content: "(10)";
+    display: inline-block;
+    position: absolute;
+    right: 1.5em;
+}
+
+.menu_nombre_clothes .adiddas::after,.menu_nombre_clothes .pierrot::after{
+    content: "(5)";
+    display: inline-block;
+    position: absolute;
+    right: 1.5em;
+}
+/*style pour menu_monbre_clothes*/
+
+/*style pour best-sold*/
+
+.meilleur_vente_texte{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.404);
+    margin-bottom: 1em;
+    position: relative;
+}
+
+/*style pour best-sold*/
+
+
+
+
+
+.cote_left{
+        border-right: 1px solid rgba(128, 128, 128, 0.541);
+}
+.cote_left .display-9{
+    width: 150px;
+}
+.cote_left .best-seller p{
+     width: 150px;
+     text-align: justify;
+}
+
+.cote_left .meilleur_vente_texte{
+    margin-left: 5em;
+}
+  /*style pour main_cote_left*/ 
+
+
+
+  /*style pour main_cote_right*/
+  .cote_right{
+      flex: 7;
+  } 
+
+  .cote_right_image .clothe_img{
+      width: 250px;
+      height: 300px;
+  }
+  .cote_right_image .clothe_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.425);
+}
+.cote_right_image .clothe .prix{
+    font-weight: bold;
+    margin-top: -1em;
+}
+.cote_right_image .clothe .category{
+    font-size: 1.5em;
+    font-weight: lighter;
+    margin-top: -.6em;
+}
+.section_pagination a:active{
+    background-color: rgb(34, 34, 216);
+}
+ /*style pour main_cote_right*/
+
+
+         /*==== style pour main ====*/
+
+/*style pour quick_links*/
+
+.quick_links{
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.87);
+}
+.quick_links .liens_menu a{
+    display: block;
+    color: black;
+    transition: 0.3s ease-in all;
+}
+
+.quick_links .liens_menu a:hover{
+   color: crimson;
+}
+
+/*style pour quick_links*/
+
+/*style pour footer*/
+footer{
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.13);
+    font-size: .7em;
+
+}
+/*style pour footer*/
+
+
+
+@media (max-width:800px){
+
+      .list_menu{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        position: fixed;
+        top:0;
+        bottom: 0;
+        right: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.705);
+        z-index: 10;
+        transition: 0.6s ease all;
+      }
+      .show{
+          left: 0; 
+      }
+      .show a{
+          font-size: 1.3em;
+          color:white;
+          margin: 3em 0 0 0;
+
+      }
+      .close{
+          position: absolute;
+          top: -.5em;
+          right: .1em;
+          color: rgb(173, 0, 35);
+          font-size: 5em;
+          cursor: pointer;
+          margin: 0;
+          padding: 0;
+
+      }
+      .barre_menu{
+        display: block;
+    }
+    
+   
+  }
+  @media (max-width:545px) {
+    .cote_left{
+        border-right:none;
+        margin-right: .2em;
+        margin: auto;
+     }
+     
+  }
+  @media (min-width:545px) and (max-width:760px) {
+    .cote_left{
+        border-right:none;
+        margin-right: .2em;
+        margin: auto;
+     }
+     
+  }
+  @media (min-width:545px) and (max-width:580px) {
+      .section_main{
+          flex-direction: column;
+      }
+  }

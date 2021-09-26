@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="boutique.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/fontawesome.min.css">
+    <link rel="stylesheet" href="./style/all.min.css">
+    <title>ClothesShop</title>
+
+</head>
+<body>
+    <div class="container-fluid content ps-1 pe-1">
+        <header class="d-flex justify-content-between align-items-center p-1 p-md-3 ms-1 me-1 ms-md-2 me-md-2 ">
+            <h1 class="fw-bold"><a href="#" class="text-decoration-none">Clothes Shop</a> </h1>
+            <div class="list_menu" id="liste_menu">
+                <a href="index.html" class="text-decoration-none  fw-bold">Accueil</a>
+                <a href="boutique.html" class="text-decoration-none fw-bold ms-2">Boutique</a>
+                <a href="contact.html"  class=" fw-bold ms-2 text-decoration-none ">ContactezNous</a>
+                <a href="#" class=" fw-bold ms-2 text-decoration-none" >0CFA <i class="fas fa-shopping-bag"></i></a>
+                <span class="d-md-none close">&times;</span>
+            </div>
+            <div class="barre_menu">
+               <a href="#" class="text-decoration-none btn p-1"> 
+                   <span></span>
+                  <span class="mt-1"></span>
+                  <span class="mt-1"></span>
+              </a>
+            </div>
+        </header>
+        </div>
+       
+
+        <main>
+            <div class="d-flex section_main flex-wrap flex-sm-column flex-md-row  mt-4">
+                  <div class="cote_left p-1 ps-md-3 pt-md-1 pb-md-3 pe-md-3">
+            <input type="search" placeholder="recherche de P" name="search" id="recherche">
+        <button type="button" class="btn-lg  border-0 rechercher">Recherche</button>
+                     
+<div class="menu_nombre_clothes">
+
+    <h5 class="display-9">Parcourir par Catégories</h5>
+        <h5 class="fw-light">Jeans</h5>
+    <p class="ms-5 jeans_noir"><a href="#" class="text-decoration-none text-dark">jeans noirs</a></p>
+    <p class="ms-5 jeans_blue"><a href="#"class="text-decoration-none text-dark">jeans bleu</a> </p>
+        <h5 class="fw-light">Tee-shirt</h5>
+    <p class="ms-5 nike"><a href="#" class="text-decoration-none text-dark" >Nike</a></p>
+    <p class="ms-5 hawai"><a href="#" class="text-decoration-none text-dark">Hawai</a> </p>
+    <p class="ms-5 pierrot"><a href="#" class="text-decoration-none text-dark"> Pierrot</a></p>
+    <p class="ms-5 adiddas"><a href="#"class="text-decoration-none text-dark">Adiddas</a></p>
+
+</div>
+
+    <div class="best-seller d-none d-md-block">
+
+            <h5 class="display-8 text-center mb-3">Nos Meilleurs ventes</h5>
+        <div class="meilleur_vente_texte one ">
+            <p>Elastic,tres confortable <br>pendant les marches. <br> un bleu faire pour resister a la pression de votre machine à laver.</p>
+            <span></span>
+            <p class="fw-bold" >1500 CFA</p>
+        </div>
+        
+        <div class="meilleur_vente_texte two">
+
+            <p>Tee-shirt pour l'été printemps <br> pour des sorties à la plage.</p>
+            <span></span>
+            <p  class="fw-bold">8000 CFA</p>
+        </div>
+        
+        <div class="meilleur_vente_texte three">
+
+        <p>80% Cotton <br> 20% Polyester <br>résiste au rayon du soleil.</p>
+        <span></span>
+        <p  class="fw-bold">3000 CFA</p>
+        </div>
+        
+        <div class="meilleur_vente_texte four">
+
+        <p>Adiddas <br> la fameuse marque qui <br>rendra votre journée trés gai <br> white ,100% Cotton.</p>
+        <span></span>
+        <p  class="fw-bold">3000 CFA</p>
+        </div>
+
+        <div class="meilleur_vente_texte five">
+        <p>l'Hiver est là avec du tissu <br>en Polyester double protéger votre peau de la fraicheur.</p>
+        <span></span>
+        <p  class="fw-bold">5000 CFA</p>
+        </div>
+
+    </div>
+        <div>
+                <h5 class="display-6 text-center text-decoration-underline text-secondary filtrer">Filtrer Par Prix</h5>
+                    <div class="m-0 ms-md-4">
+                <button type="button" class="btn-sm">Filter</button> 
+                <b>prix:OCFA-15000CFA</b>
+                    </div>
+        </div>
+                  </div>
+
+
+        <div class="cote_right">
+
+        <div class="cote_right_texte mx-auto d-flex align-items-center justify-content-between container ps-0 pe-0 m-0 ps-md-2 pe-md-2 ps-lg-5 pe-lg-5">
+    <p class="m-0"><span class="text-secondary">Accueil/Store</span><br> Affichage De 1-12 sur 18 Résultats</p>
+            <div class="cote-right_btn">
+             <select name="vetements" id="clothes">
+                 <option disabled>tri par defaut</option>
+                 <option value="jeans" >Jeans</option>
+                 <option value="tee-Shirt ">shirt</option>
+                 <option value="shoe ">shoe</option>
+             </select>
+            </div>
+        </div>
+        <div class="cote_right_image mt-3">
+    
+            <div class="premiere_ligne mb-5 d-flex  flex-sm-column flex-md-row flex-wrap justify-content-center align-items-center">
+
+                <div class="clothe p-0 p-lg-2 p-md-1 text-center">
+                    <div class="clothe_img ">
+                     <img src="./images_boutique/506d710261984d0237f70b3e0ffa6139.jpg" alt="clothes">
+                     </div>
+                     <h5>HAWAI_VENUS</h5>
+                     <p class="category">chemise</p>
+                     <p class="prix">3000 CFA</p>
+                </div>
+                
+                <div class="clothe p-0 p-lg-2 p-md-1 text-center">
+                    <div class="clothe_img">
+                     <img src="./images_boutique/5c4c6f3a643c2af2a854c46294980e82.jpg" alt="clothes">
+                     </div>
+                     <h5>HAWAI_FLORIDE</h5>
+                     <p class="category">chemise</p>
+                     <p class="prix">3000 CFA</p>
+                </div>
+    
+                <div class="clothe p-0 p-lg-2 p-md-1 text-center">
+                    <div class="clothe_img">
+                     <img src="./images_boutique/3ae0eeca8ae44c1e8b8de61084ed674c.jpg" alt="clothes">
+                     </div>
+                     <h5>GRAY_TOUCH</h5>
+                     <p class="category"> tee-Shirt</p>
+                     <p class="prix">3000 CFA</p>
+                </div>
+            </div>
+
+            <div class="deuxiemme_ligne  mb-5  d-flex flex-sm-column flex-md-row flex-wrap justify-content-center align-items-center">
+                
+            <div class="clothe p-0 p-lg-2 p-md-1 text-center">
+                <div class="clothe_img">
+                 <img src="./images_boutique/e7f2bfff560e3de8e64de41689d84982.jpg" alt="clothes">
+                 </div>
+                 <h5>JEANS BLUE DROIT</h5>
+                 <p class="category">jeans</p>
+                 <p class="prix">1500 CFA</p>
+            </div>
+
+            <div class="clothe p-0 p-lg-2 p-md-1 text-center">
+                <div class="clothe_img">
+                 <img src="./images_boutique/d7422d8dbba135fabeb86cf6637cc4a9.jpg" alt="clothes">
+                 </div>
+                 <h5>JEANS BLUE SLIM</h5>
+                 <p class="category">jeans</p>
+                 <p class="prix">1500 CFA</p>
+            </div>
+
+            <div class="clothe p-0 p-lg-2 p-md-1 text-center">
+                <div class="clothe_img">
+                 <img src="./images_boutique/65c29a466301997af4498c26e70ad154.jpg" alt="clothes">
+                 </div>
+                 <h5>JEANS BORDEAU SLIM</h5>
+                 <p class="category">jeans</p>
+                 <p class="prix">1500 CFA</p>
+            </div>
+            </div>
+
+
+            <div class="troisiemme_ligne mb-5 d-flex flex-sm-column flex-md-row flex-wrap justify-content-center align-items-center">
+                <div class="clothe p-0p-lg-2 p-md-1 text-center">
+                    <div class="clothe_img">
+                     <img src="./images_boutique/53ac9d300d42ae2b9faffb41af28bac7.jpg" alt="clothes">
+                     </div>
+                     <h5>TEE_SHIRT WHITE</h5>
+                     <p class="category">Tee-shirt</p>
+                     <p class="prix">1500 CFA</p>
+                </div>
+    
+                <div class="clothe p-0 p-lg-2 p-md-1 text-center">
+                    <div class="clothe_img">
+                     <img src="./images_boutique/91ad4c70fcf6b2f3bfec3774d6d03211.jpg" alt="clothes">
+                     </div>
+                     <h5>TEE_SHIRT PINK_NIKE</h5>
+                     <p class="category">Tee-shirt</p>
+                     <p class="prix">1500 CFA</p>
+                </div>
+                
+                
+                <div class="clothe p-0 p-lg-2 p-md-1 text-center">
+                    <div class="clothe_img">
+                     <img src="./images_boutique/3467d93848d089db35d4baf5eb1229af.jpg" alt="clothes">
+                     </div>
+                     <h5>TEE_SHIRT BLACK_NIKE</h5>
+                     <p class="category">Tee-shirt</p>
+                     <p class="prix">1500 CFA</p>
+                </div>
+            </div>
+        </div>
+        <div class="section_pagination text-center mb-3 mb-md-0">
+                <a href="#" class="text-decoration-none border p-2 text-dark bg-primary">1</a> 
+                <a href="#" class="text-decoration-none border p-2 text-dark">2</a>
+                <a href="#" class="text-decoration-none border p-2 text-dark">&#10132;</a>    
+        </div>
+                  </div>
+            </div>
+
+           
+
+            <div class="quick_links container-fluid mt-0 mt-md-5 p-2 p-md-5">
+                <P class="mb-3 display-6">Quick Links</P>
+                <div class="liens_menu">
+                    <a href="#" class="text-decoration-none">Accueil</a>
+                    <a href="#" class="text-decoration-none">MonCompte</a>
+                    <a href="#" class="text-decoration-none">ContactezNous</a>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="container-fluid">
+                <div class="d-flex flex-wrap justify-content-between align-items-center p-0 p-md-3">
+                      <P>copyright@2021ClothesShop</P>
+                      <p>Powered by ClothesShop</p>
+                </div>
+            </div>
+        </footer>
+    <script src="java.js"></script>
+</body>
+</html>
