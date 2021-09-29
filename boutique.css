@@ -58,9 +58,11 @@ input{
     border-radius: 5px;
     border: 1px solid gray;
     padding-left: 1em;
-
+    outline: none;
 }
-
+input:focus{
+    box-shadow: 1px 1px 6px rgb(0, 128, 128);
+}
 ::placeholder{
     font-size: 1.4em;
     font-weight: lighter;
@@ -106,6 +108,13 @@ input{
     position: absolute;
     right: 1.5em;
 }
+.menu_nombre_clothes a{
+    color: black;
+    font-weight: bold;
+}
+.menu_nombre_clothes a:hover{
+    color: crimson;
+}
 /*style pour menu_monbre_clothes*/
 
 /*style pour best-sold*/
@@ -115,7 +124,13 @@ input{
     margin-bottom: 1em;
     position: relative;
 }
-
+.meilleur_vente_texte img{
+    position: absolute;
+    left: -4em;
+    top: 25%;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.356);
+    transform: rotate(-10deg);
+}
 /*style pour best-sold*/
 
 
